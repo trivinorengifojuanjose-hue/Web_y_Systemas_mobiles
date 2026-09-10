@@ -3,4 +3,6 @@ import json
 with data_file.open('r') as file:
     clientes = json.load(file)
 
-    print(clientes)
+for cliente in clientes:
+    print(cliente["nombre"])
+ 
